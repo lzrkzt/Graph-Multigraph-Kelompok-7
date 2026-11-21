@@ -320,3 +320,66 @@ body {
     width: 23%;
     height: 70%;
 }
+
+/* ======= REPRESENTASI ======= */
+#representasi {
+    background-color: rgb(46, 199, 199);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.representasi-container {
+    margin: 0 15px 0 15px;
+    width: 50%;
+    height: 250px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+.representasi-atas {
+    background-color: blue;
+    text-align: center;
+    height: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+.representasi-atas p {
+    line-height: 15px;
+}
+
+.representasi-bawah {
+    display: flex;
+    height: 80%;
+}
+
+.representasi-kiri {
+    background-color: blueviolet;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.representasi-kiri img {
+    width: 160px;
+    height: 160px;
+}
+
+.representasi-kanan {
+    background-color: brown;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.representasi-kanan p {
+    margin: 0 0 15px 15px;
+}
