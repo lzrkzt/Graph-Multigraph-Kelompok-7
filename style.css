@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== NAVIGATION BAR ====== */
+#container-navbar {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: gray;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#navbar nav ul li a {
+    display: block;
+    color: black;
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 65px;
+
+    transition: 1s;
+}
+
+/* ======= HERO IMAGE ======= */
+#container-hero {
+    background-image: url(https://pxdrop.online/raw/dc00c5i81qec73aqvb50);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======= GRAPH ======= */
+#graph-container{
+    margin: 15px 15px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#graph {
+    background-color: antiquewhite;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    scroll-margin-top: 200px;
+}
+
+#graph p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#graph h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ======= DASAR GRAPH ======= */
+#dasar-graph {
+    display: flex;
+    justify-content: center;
+}
+
+.judul-submateri {
+    /* background-color: aqua; */
+    width: 50%;
+    padding-left: 20px;
+    margin-left: 80px;
+    /* border-radius: 0 10px 10px 0; */
+    border-left: 5px solid blue;
+}
+
+#dasar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#dasar-graph {
+    background-color: antiquewhite;
+    height: 200px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.dasar {
+    background-color: darkseagreen;
+    margin: 0 15px 0 15px;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}
+
+#dasar-notasi {
+    background-color: darkseagreen;
+    margin: 0 15px 0 15px;
+    height: 70%;
+    width: 20%;
+    text-align: center;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}
+
+#dasar-notasi #notasi p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#dasar-notasi #notasi h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dasar-teks {
+    /* background-color: aqua; */
+    height: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dasar-teks p{
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dasar-teks .judul-dasar-teks{
+    font-size: 12px;
+}
+
+.dasar-foto {
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+
+#vertex {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#edge {
+    width: 80px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* ======= ISTILAH GRAPH ======= */
+#istilah-dasar-graph {
+    background-color: antiquewhite;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.istilah-container {
+    background-color: darkseagreen;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    margin: 0 15px 0 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid darkgreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.istilah-atas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.istilah-atas #bertetangga {
+    width: 70px;
+    height: 20px;
+    margin: 0 15px 0 0;
+}
+
+.istilah-atas #bersisian, .istilah-atas #degree{
+    width: 80px;
+    height: 70px;
+    margin: 0 15px 0 0;
+}
+
+.istilah-atas #loop {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+}
+
+.istilah-bawah {
+    text-align: center;
+}
+
+/* ======= JENIS GRAPH ======= */
+.jenis-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#jenis-graph {
+    background-color: antiquewhite;
+    width: 90%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.jenis-content {
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px;
+    width: 30%;
+    height: 70%;
+    border-right: 2px solid darkgreen;
+    border-left: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+    display: flex;
+    border-radius: 10px;
+}
+
+.jenis-atas {
+    background-color: darkseagreen;
+    background-color: rgba(47, 79, 79, 0.682);
+    border-top: 2px solid darkgreen;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+.jenis-bawah {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jenis-bawah .jenis-kiri {
+    /* background-color: brown; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jenis-bawah .jenis-kanan {
+    /* background-color: blueviolet; */
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.garis {
+    background-color: darkgreen;
+    opacity: 0.4;
+    width: 1%;
+    height: 75%;
+    border-radius: 1px;
+    align-self: center;
+}
+
+.jenis-kiri img {
+    width: 65%;
+    height: 25%;
+}
+
+.jenis-kiri #simple-graph {
+    width: 60%;
+    height: 50%;
+}
+
+.jenis-kiri #pseudograph {
+    width: 23%;
+    height: 70%;
+}
